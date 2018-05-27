@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="OUTPUT_FILE_LOC" prompt="OUTPUT_FILE_LOC?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="&quot;C:/Users/1040-G2/workspace/out2.csv&quot;"/>
+    <contextParameter comment="" name="Input_File_Loc" prompt="Input_File_Loc?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter.txt&quot;"/>
+    <contextParameter comment="" name="Src_file_Name" prompt="Src_file_Name?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="Source_File_Filter"/>
+    <contextParameter comment="" name="Input_File_Loc1" prompt="Input_File_Loc1?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter1.txt&quot;"/>
+    <contextParameter comment="" name="Input_File_Loc2" prompt="Input_File_Loc2?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter2.txt&quot;"/>
+    <contextParameter comment="" name="Input_File_Loc3" prompt="Input_File_Loc3?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter3.txt&quot;"/>
+    <contextParameter comment="" name="Input_File_Loc4" prompt="Input_File_Loc4?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter4.txt&quot;"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -107,10 +115,8 @@
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_P3cygGC6EeiR2N8UBlwkqw" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File.txt&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Input_File_Loc1"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
