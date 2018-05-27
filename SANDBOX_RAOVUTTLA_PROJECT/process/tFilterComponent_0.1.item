@@ -3,6 +3,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="OUTPUT_FILE_LOC" prompt="OUTPUT_FILE_LOC?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="&quot;C:/Users/1040-G2/workspace/out2.csv&quot;"/>
     <contextParameter comment="" name="Input_File_Loc" prompt="Input_File_Loc?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="C:\Users\1040-G2\Desktop\Source_Files"/>
+    <contextParameter comment="" name="Src_file_Name" prompt="Src_file_Name?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="Source_File_Filter"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
