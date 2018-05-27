@@ -107,106 +107,254 @@
     <routinesParameter id="_ZQ8ZcGBiEeiq_aLCusTtmg" name="TalendStringUtil"/>
     <routinesParameter id="_ZQDBkGBiEeiq_aLCusTtmg" name="TalendString"/>
   </parameters>
-  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_JWPxgGDJEeiR2N8UBlwkqw" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12"/>
-    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SERVICE_NAME" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;xe&quot;"/>
-    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;system&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="iPWlnSQTWxNpNZ2F7WJH1g=="/>
-    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from TEST&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
-    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
-    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
-    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AGE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SEX"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Oracle_Test"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tOracleInput_1">
-      <column comment="" key="true" length="2" name="NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="AGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="SEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.OUTPUT_FILE_LOC"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_P3cygGC6EeiR2N8UBlwkqw" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File.txt&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_P3cygGC6EeiR2N8UBlwkqw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/1040-G2/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="SPLIT" value="false"/>
-    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
-    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="age"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sex"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dob"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="age"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sex"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dob"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Source_File"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileOutputDelimited_1">
-      <column comment="" key="true" length="2" name="NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="AGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="SEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="2" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="sex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="2" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="sex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tFileOutputDelimited_1">
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_1" show="false"/>
+    <elementParameter field="RADIO" name="CHECK_ALL" value="false"/>
+    <elementParameter field="RADIO" name="CUSTOMER" value="true"/>
+    <elementParameter field="TABLE" name="CHECKCOLS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="age"/>
+      <elementValue elementRef="SELECTED_TYPE" value="Integer"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sex"/>
+      <elementValue elementRef="SELECTED_TYPE" value="Character"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dob"/>
+      <elementValue elementRef="SELECTED_TYPE" value="Date"/>
+      <elementValue elementRef="DATEPATTERN" value="&quot;dd-MM-yyyy&quot;"/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#xA;(1) Nullable setting in this table is more preferential than the default schema.&#xA;(2) Length checking is base on the value of the default schema."/>
+    <elementParameter field="RADIO" name="CHECK_ANOTHER" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema" show="false"/>
+    <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_SUB_STRING" value="     If exceed, either trim the field when above option checked or reject the row."/>
+    <elementParameter field="LABEL" name="INFO" value="If only one column has error, the errCode value is a summation of all error code; else the errCode is 16:&#xA;(1) Type discrepancy (include wrong date pattern): 2&#xA;(2) Empty or NULL: 4&#xA;(3) Length/Precision Error: 8"/>
+    <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with multi-threaded jobs)"/>
+    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false"/>
+    <elementParameter field="CHECK" name="EMPTY_IS_NULL" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ALL_EMPTY_ARE_NULL" value="true"/>
+    <elementParameter field="TABLE" name="EMPTY_NULL_TABLE" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="age"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sex"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dob"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tSchemaComplianceCheck_1">
+      <column comment="" key="false" length="2" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="sex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OTHER" name="OTHER"/>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="2" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="sex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_1" show="false"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
+    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tConvertType_1">
+      <column comment="" key="false" length="2" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="sex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="2" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="sex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="age"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sex"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dob"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_1">
+      <column comment="" key="false" length="2" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="sex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="age"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sex"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dob"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
+      <column comment="" key="false" length="2" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="sex" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tSchemaComplianceCheck_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSchemaComplianceCheck_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSchemaComplianceCheck_1" target="tConvertType_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row4" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSchemaComplianceCheck_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
