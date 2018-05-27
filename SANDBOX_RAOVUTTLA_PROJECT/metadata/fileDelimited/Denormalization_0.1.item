@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_3G4MQGGzEei5_ZxPa5b3lw" name="Denormalization" dataPackage="_3G4MQWGzEei5_ZxPa5b3lw" Server="Localhost 127.0.0.1" FilePath="C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter_Denormalization.txt" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_3G4MQWGzEei5_ZxPa5b3lw" name="default" dataManager="_3G4MQGGzEei5_ZxPa5b3lw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_3G4MQmGzEei5_ZxPa5b3lw" id="_bX2gcGGzEei5_ZxPa5b3lw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3G4MQ2GzEei5_ZxPa5b3lw" label="Name" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3G4MRGGzEei5_ZxPa5b3lw" label="age" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3G4MRWGzEei5_ZxPa5b3lw" label="sex" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3G4MRmGzEei5_ZxPa5b3lw" label="dob" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3G4MR2GzEei5_ZxPa5b3lw" label="Sub" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
