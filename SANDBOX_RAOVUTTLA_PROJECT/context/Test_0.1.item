@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Q8tW4GFpEei5_ZxPa5b3lw" confirmationNeeded="false" name="Default">
   <contextParameter xmi:id="_Q8tW4WFpEei5_ZxPa5b3lw" comment="" name="OUTPUT_FILE_LOC" prompt="OUTPUT_FILE_LOC?" promptNeeded="false" type="id_String" value="&quot;C:/Users/1040-G2/workspace/out2.csv&quot;"/>
-  <contextParameter xmi:id="_WrmjoGF6Eei5_ZxPa5b3lw" comment="" name="Input_File_Loc" prompt="Input_File_Loc?" promptNeeded="false" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter1.txt&quot;"/>
+  <contextParameter xmi:id="_WrmjoGF6Eei5_ZxPa5b3lw" comment="" name="Input_File_Loc" prompt="Input_File_Loc?" promptNeeded="false" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter.txt&quot;"/>
   <contextParameter xmi:id="_NNZfoGGBEei5_ZxPa5b3lw" comment="" name="Src_file_Name" prompt="Src_file_Name?" promptNeeded="false" type="id_String" value="Source_File_Filter"/>
+  <contextParameter xmi:id="_pbHMYGGeEei5_ZxPa5b3lw" comment="" name="Input_File_Loc1" prompt="Input_File_Loc1?" promptNeeded="false" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter1.txt&quot;"/>
+  <contextParameter xmi:id="_pbHMYWGeEei5_ZxPa5b3lw" comment="" name="Input_File_Loc2" prompt="Input_File_Loc2?" promptNeeded="false" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter2.txt&quot;"/>
+  <contextParameter xmi:id="_pbHMYmGeEei5_ZxPa5b3lw" comment="" name="Input_File_Loc3" prompt="Input_File_Loc3?" promptNeeded="false" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter3.txt&quot;"/>
+  <contextParameter xmi:id="_pbHMY2GeEei5_ZxPa5b3lw" comment="" name="Input_File_Loc4" prompt="Input_File_Loc4?" promptNeeded="false" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter4.txt&quot;"/>
 </talendfile:ContextType>
