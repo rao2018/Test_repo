@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Q8tW4GFpEei5_ZxPa5b3lw" confirmationNeeded="false" name="Default">
   <contextParameter xmi:id="_Q8tW4WFpEei5_ZxPa5b3lw" comment="" name="OUTPUT_FILE_LOC" prompt="OUTPUT_FILE_LOC?" promptNeeded="false" type="id_String" value="&quot;C:/Users/1040-G2/workspace/out2.csv&quot;"/>
-  <contextParameter xmi:id="_WrmjoGF6Eei5_ZxPa5b3lw" comment="" name="Input_File_Loc" prompt="Input_File_Loc?" promptNeeded="false" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter.txt&quot;"/>
+  <contextParameter xmi:id="_WrmjoGF6Eei5_ZxPa5b3lw" comment="" name="Input_File_Loc" prompt="Input_File_Loc?" promptNeeded="false" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter1.txt&quot;"/>
   <contextParameter xmi:id="_NNZfoGGBEei5_ZxPa5b3lw" comment="" name="Src_file_Name" prompt="Src_file_Name?" promptNeeded="false" type="id_String" value="Source_File_Filter"/>
 </talendfile:ContextType>
