@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="OUTPUT_FILE_LOC" prompt="OUTPUT_FILE_LOC?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="&quot;C:/Users/1040-G2/workspace/out2.csv&quot;"/>
-    <contextParameter comment="" name="Input_File_Loc" prompt="Input_File_Loc?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter.txt&quot;"/>
+    <contextParameter comment="" name="Input_File_Loc" prompt="Input_File_Loc?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="&quot;C:/Users/1040-G2/Desktop/Source_Files/Source_File_Filter1.txt&quot;"/>
     <contextParameter comment="" name="Src_file_Name" prompt="Src_file_Name?" promptNeeded="false" repositoryContextId="_Q8WKgGFpEei5_ZxPa5b3lw" type="id_String" value="Source_File_Filter"/>
   </context>
   <parameters>
