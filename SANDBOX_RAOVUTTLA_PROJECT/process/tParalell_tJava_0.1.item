@@ -185,7 +185,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.Name = input_row.Name;&#xD;&#xA;output_row.age = input_row.age;&#xD;&#xA;output_row.sex = input_row.sex;&#xD;&#xA;output_row.dob = input_row.dob;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.Name = input_row.Name;&#xD;&#xA;output_row.age = input_row.age;&#xD;&#xA;output_row.sex = if input_row.sex=&quot;M&quot; then &quot;MALE&quot; else &quot;F&quot;;&#xD;&#xA;output_row.dob = input_row.dob;&#xD;&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tJavaRow_1">
