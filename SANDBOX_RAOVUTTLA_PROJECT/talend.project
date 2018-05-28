@@ -200,7 +200,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_izh-EGKTEeiNWpZJNWNsyg">
       <baseItem xmi:id="_izh-EWKTEeiNWpZJNWNsyg" id="_PImrkGKTEeiNWpZJNWNsyg" version="0.1" type="job"/>
-      <relatedItems xmi:id="_izh-EmKTEeiNWpZJNWNsyg" id="_P3cygGC6EeiR2N8UBlwkqw" version="Latest" type="property"/>
       <relatedItems xmi:id="_izh-E2KTEeiNWpZJNWNsyg" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_izh-FGKTEeiNWpZJNWNsyg" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_izh-FWKTEeiNWpZJNWNsyg" id="Relational" version="Latest" type="routine"/>
@@ -212,6 +211,7 @@
       <relatedItems xmi:id="_izh-G2KTEeiNWpZJNWNsyg" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_izh-HGKTEeiNWpZJNWNsyg" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_izh-HWKTEeiNWpZJNWNsyg" id="_P3cygGC6EeiR2N8UBlwkqw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PYqrYGKUEeiNWpZJNWNsyg" id="_Q8WKgGFpEei5_ZxPa5b3lw" version="Latest" type="context"/>
     </ItemsRelations>
     <migrationTask xmi:id="_ZBu4wGBiEeiq_aLCusTtmg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_ZBu4wWBiEeiq_aLCusTtmg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
